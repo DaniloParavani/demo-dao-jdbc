@@ -60,10 +60,26 @@ public class Program {
 //        System.out.println("Inserted! New id = " + newDepartment.getId());
 
 //        System.out.println("\n==== TEST 8: department update ====");
+//        Department department = departmentDao.findById(3);
+//        department.setName("Fashion 2");
+//        departmentDao.update(department);
+//        System.out.println("Update completed!");
 
-        System.out.println("==== TEST 9: department findById ====");
-        Department department = departmentDao.findById(3);
-        System.out.println(department);
+//        System.out.println("==== TEST 9: department findById ====");
+//        Department department = departmentDao.findById(3);
+//        System.out.println(department);
+
+//        System.out.println("\n==== TEST 10: department delete ====");
+//        System.out.println("Enter id for delete test: ");
+//        int id = sc.nextInt();
+//        departmentDao.deleteById(id);
+//        System.out.println("Delete completed!");
+
+        System.out.println("\n==== TEST 11: department findAll ====");
+        List<Department> list = departmentDao.findAll();
+        for (Department obj : list) {
+            System.out.println(obj);
+        }
 
         sc.close();
     }
